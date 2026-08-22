@@ -1,0 +1,6 @@
+name: astrbot_plugin_skill_cache_guard
+display_name: 技能目录缓存保护
+author: Mikachiyo
+version: v1.0.0
+desc: 仿 deepseek-harness 的技能目录注入策略：冻结 system prompt 前缀，技能变化改为上下文尾部追加，压缩/截断时才合并重整到 system 消息之后，保护 LLM 上下文缓存。
+repo: https://github.com/Mikachiyo/astrbot_plugin_skill_cache_guard
