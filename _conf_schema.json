@@ -2,13 +2,13 @@
   "enable": {
     "type": "bool",
     "title": "启用技能目录缓存保护",
-    "description": "开启后，技能目录不再拼进 system prompt，而是以持久消息注入上下文；技能变化时仅在尾部追加更新，压缩/截断时才合并重整到 system 消息之后。关闭后恢复 AstrBot 原生注入行为。",
+    "description": "开启后，技能目录不再拼进 system prompt，而是作为临时内容块跟随当前用户消息下发（不写入会话历史）；技能变化时即时生效。关闭后恢复 AstrBot 原生注入行为。",
     "default": true
   },
   "debug_log": {
     "type": "bool",
     "title": "调试日志",
-    "description": "在日志中输出每次目录注入与压缩重整的详细信息，用于确认缓存保护是否生效。",
+    "description": "在日志中输出每次目录注入与遗留目录清理的详细信息，用于确认缓存保护是否生效。",
     "default": false
   }
 }
